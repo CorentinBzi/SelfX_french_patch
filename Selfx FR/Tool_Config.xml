@@ -1,0 +1,46 @@
+﻿<GUI_Config>
+<!-- Outil et versions XML -->
+<!-- <XML_Version>1.0.0</XML_Version>	-->
+<Tool_Version>1.0.2</Tool_Version>
+<!-- Partie emplacement d'installation -->
+<Shortcut_Desktop>Vrai</Shortcut_Desktop> <!-- Vrai ou Faux -->
+<Shortcut_StartMenu>Vrai</Shortcut_StartMenu> <!-- Vrai ou Faux -->
+
+<!-- Partie notification Toast pour l'utilisateur -->
+<Show_Install_Toast>Vrai</Show_Install_Toast> <!-- Afficher un toast à l'utilisateur après l'installation de l'outil. Vrai ou Faux -->
+<Toast_Header_Picture>Toast_Header.gif</Toast_Header_Picture>		
+<Toast_Company_Name>Syst et Deploy vous informe</Toast_Company_Name>
+<Toast_Title>Un nouvel outil est disponible sur votre appareil</Toast_Title>
+<Toast_Text>Un nouvel outil vous permettant de résoudre les problèmes vous-même est disponible sur votre appareil. Cliquez sur le raccourci SelfX disponible sur votre bureau ou dans le menu Démarrer pour lancer l'outil.
+</Toast_Text>
+<Toast_Button_Text>Fermer</Toast_Button_Text>
+<!-- Emplacement de la liste des problèmes (sur le web ou localement) -->
+<Link_Scripts></Link_Scripts> <!-- Si Type = Télécharger, tapez le chemin où trouver Issues_List.xml --> 
+
+<!-- Personnalisez l'outil ici -->
+<!-- Couleur principale de l'outil -->
+<Tool_Color>Cyan</Tool_Color> <!-- Couleurs disponibles: “Rouge”, “Vert”, “Bleu”, “Violet”, “Orange”, “Lime”, “Emeraude”, “Sarcelle”, “Cyan”, “Cobalt”, “Indigo”, “Violet”, “Rose”, “Magenta”, “Cramoisi”, “Ambre”, “Jaune”, “Marron”, “Olive”, “Acier”, “Mauve”, “Taupe”, “Terre de Sienne” -->				
+
+<!-- Texte affiché dans l'outil -->
+<Main_Title_Text>Un problème avec votre appareil</Main_Title_Text> <!-- GUI principale: titre principal -->
+<Show_Computer_Name>Vrai</Show_Computer_Name> <!-- Afficher le nom de l'ordinateur à côté du titre principal. Vrai ou Faux -->		
+<Subtitle_Text>Vous pouvez trouver une solution ici avec une liste de solutions cliquables</Subtitle_Text> <!-- GUI principale: sous-titre -->
+<Issue_filter_Title_Text>Trier les problèmes par composants</Issue_filter_Title_Text> <!-- Texte dans la combo box -->
+<Issue_filter_KeyWord_Text>Tapez un mot clé</Issue_filter_KeyWord_Text> <!-- Texte dans la boîte de texte du mot clé -->		
+<Available_Actions_Count>action(s) disponible(s)</Available_Actions_Count> <!-- Texte affiché pour compter le nombre d'action pour chaque catégorie -->
+
+<!-- Texte affiché dans l'avertissement -->
+<Run_solution_Text>Vous permet d'exécuter une action</Run_solution_Text> <!-- Texte pour la légende du bouton bleu -->
+<Run_explanation_Text>Vous permet d'obtenir plus d'informations</Run_explanation_Text> <!-- Texte pour la légende du bouton vert -->	
+<Warning_Click_Run_Solution_Text>Résolution d'un problème</Warning_Click_Run_Solution_Text>	<!-- Texte affiché dans la barre de titre après avoir cliqué sur le bouton bleu -->
+<Warning_Click_Run_Explanation_Text>Voir plus d'informations</Warning_Click_Run_Explanation_Text> <!-- Texte affiché dans la barre de titre après avoir cliqué sur le bouton vert -->	
+
+<!-- Partie support -->
+<Show_Support_Button>Vrai</Show_Support_Button> <!-- Afficher le bouton dans la barre de titre pour voir les informations de support. Vrai ou Faux -->
+<Window_Title>Informations de l'équipe de support</Window_Title>
+<Support_Phone_Label>Numéro de téléphone : votre_numero</Support_Phone_Label>
+<Support_Phone_number></Support_Phone_number>
+<Support_Mail_Label>Mail : contact@votre_domaine.fr</Support_Mail_Label>		
+<Support_Mail></Support_Mail>	
+<Close_Button_Text>Fermer</Close_Button_Text>				
+</GUI_Config>

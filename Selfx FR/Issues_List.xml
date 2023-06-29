@@ -1,0 +1,505 @@
+﻿<Actions>
+	<XML_Version>1.0.0</XML_Version>
+
+	<!-- Partie pour le périphérique --> 
+	<Action>	
+		<Name>Vous ne parvenez pas à accéder à certains sites web</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>Vous essayez d'accéder à certains sites web, mais la connexion ne semble pas fonctionner, ou vous ne pouvez pas atteindre le site, ou vous rencontrez des erreurs</Explanation>
+		<Script>SelfX_Device_ClearCache.ps1</Script>
+		<Category>Périphérique</Category>	
+		<Alerte_MSG>Une action sera exécutée en arrière-plan. Réessayez après avoir cliqué sur OK.		
+
+Voulez-vous continuer ?		
+		</Alerte_MSG>
+	</Action>	
+	
+	<Action>	
+		<Name>Vous avez des problèmes de connexion sur vos appareils</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>Vous essayez d'accéder à certains sites web, mais la connexion ne semble pas fonctionner, ou vous ne pouvez pas atteindre le site, ou vous rencontrez des erreurs</Explanation>
+		<Script>SelfX_Device_ClearCache.ps1</Script>
+		<Category>Périphérique</Category>	
+		<Alerte_MSG>Une action sera exécutée en arrière-plan. Réessayez après avoir cliqué sur OK.		
+
+Voulez-vous continuer ?		
+		</Alerte_MSG>
+	</Action>
+		
+	<Action>	
+		<Name>Effacer les fichiers temporaires</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>Votre appareil est lent</Explanation>
+		<Script>SelfX_Device_ClearTMP.ps1</Script>
+		<Category>Périphérique</Category>	
+		<Alerte_MSG>Les fichiers temporaires seront supprimés.	
+
+Voulez-vous continuer ?		
+		</Alerte_MSG>
+	</Action>	
+
+	<Action>	
+		<Name>Votre appareil est lent</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>Votre appareil est lent</Explanation>
+		<Script>SelfX_Device_DeviceSlow.ps1</Script>
+		<Category>Périphérique</Category>	
+		<Alerte_MSG>Les fichiers temporaires et le contenu de la corbeille seront supprimés.	
+
+Voulez-vous continuer ?		
+		</Alerte_MSG>
+	</Action>		
+
+
+	<!-- Partie pour le navigateur --> 
+	<Action>	
+		<Name>Effacer les données de navigation Google Chrome (cache)</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>Effacer les données de navigation Google Chrome (cache)</Explanation>
+		<Script>SelfX_Browser_ClearChromeCache.ps1</Script>
+		<Category>Navigateur</Category>	
+		<Alerte_MSG>Les données de navigation Google Chrome seront supprimées.	
+
+Voulez-vous continuer ?		
+		</Alerte_MSG>
+	</Action>
+	
+	<Action>	
+		<Name>Effacer les données de navigation Firefox (cache)</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>Effacer les données de navigation Firefox (cache)</Explanation>
+		<Script>SelfX_Browser_ClearFirefoxCache.ps1</Script>
+		<Category>Navigateur</Category>	
+		<Alerte_MSG>Les données de navigation Firefox seront supprimées.	
+
+Voulez-vous continuer ?		
+		</Alerte_MSG>
+	</Action>	
+
+
+	<!-- Partie pour Outlook --> 
+	<Action>	
+		<Name>Le bouton "Réunion Teams" est manquant dans Outlook</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>Le bouton "Réunion Teams" est manquant dans Outlook</Explanation>
+		<Script>SelfX_Outlook_TeamsAddIn.ps1</Script>
+		<Category>Outlook</Category>	
+		<Alerte_MSG>Outlook se fermera puis se rouvrira automatiquement.
+
+Voulez-vous continuer ?		
+		</Alerte_MSG>
+	</Action>			
+
+	<!-- Partie pour ONEDRIVE --> 
+	<Action>	
+		<Name>Démarrage du client OneDrive</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>OneDrive n'est pas en cours d'exécution</Explanation>
+		<Script>SelfX_OneDrive_Run.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>Cette action vous permet de démarrer votre client OneDrive.</Alerte_MSG>
+	</Action>
+
+	<Action>	
+		<Name>Redémarrage du client OneDrive</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>Le redémarrage de OneDrive peut parfois résoudre certains problèmes tels que des problèmes de synchronisation.</Explanation>
+		<Script>SelfX_OneDrive_Reboot.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>OneDrive se fermera et se rouvrira automatiquement.
+
+Voulez-vous continuer ?</Alerte_MSG>
+	</Action>
+
+	<Action>	
+		<Name>Résolution des problèmes de synchronisation OneDrive (étape 1)</Name>
+		<Buttons>Ok_Cancel</Buttons>								
+		<Explanation>Vous rencontrez des problèmes de synchronisation avec vos fichiers et dossiers sur OneDrive.
+		
+Cette première étape redémarrera OneDrive.		
+OneDrive se fermera et se rouvrira automatiquement.		
+
+Si le problème persiste, exécutez l'étape "Réinitialiser OneDrive".</Explanation>
+		<Script>SelfX_OneDrive_Reboot.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>Cette première étape vous permet de redémarrer OneDrive.
+
+Si le problème persiste, exécutez l'étape "Réinitialiser OneDrive".
+
+Voulez-vous continuer ?</Alerte_MSG>	
+	</Action>	
+	
+	<Action>	
+		<Name>OneDrive ne démarre pas : erreur 0x8004def4</Name>
+		<Buttons>Ok_Cancel</Buttons>						
+		<Explanation>L'erreur 0x8004def4 s'affiche lors de l'exécution de OneDrive</Explanation>
+		<Script>SelfX_OneDrive_Reset.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>OneDrive se fermera et se rouvrira automatiquement.
+
+Voulez-vous continuer ?</Alerte_MSG>
+	</Action>	
+	
+
+	<Action>	
+		<Name>Votre appareil est lent : OneDrive utilise beaucoup de mémoire sur votre appareil</Name>
+		<Buttons>Ok_Cancel</Buttons>								
+		<Explanation>Votre appareil est lent et OneDrive semble utiliser beaucoup de mémoire.</Explanation>
+		<Script>SelfX_OneDrive_Reset.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>OneDrive se fermera et se rouvrira automatiquement.
+
+Voulez-vous continuer ?</Alerte_MSG>
+	</Action>
+		
+	<Action>	
+		<Name>Croix rouge sur OneDrive</Name>
+		<Buttons>Ok_Cancel</Buttons>								
+		<Explanation>Une croix rouge s'affiche sur l'icône OneDrive</Explanation>
+		<Script>SelfX_OneDrive_Reboot.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>Cette première étape vous permet de redémarrer OneDrive.
+
+Si le problème persiste, exécutez l'étape "Réinitialiser OneDrive".
+
+Voulez-vous continuer ?</Alerte_MSG>			
+	</Action>		
+	
+	<Action>	
+		<Name>OneDrive se ferme automatiquement</Name>
+		<Buttons>Ok_Cancel</Buttons>								
+		<Explanation>Vous rencontrez un problème avec OneDrive qui s'ouvre et se ferme automatiquement</Explanation>
+		<Script>SelfX_OneDrive_Reboot.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>Cette première étape vous permet de redémarrer OneDrive.
+
+Si le problème persiste, exécutez l'étape "Réinitialiser OneDrive".
+
+Voulez-vous continuer ?</Alerte_MSG>	
+	</Action>	
+
+	<Action>	
+		<Name>Croix blanches sur les fichiers OneDrive</Name>
+		<Buttons>Ok_Cancel</Buttons>								
+		<Explanation>Des croix blanches sont affichées sur les fichiers ou dossiers OneDrive</Explanation>
+		<Script>SelfX_OneDrive_Reboot.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>Cette première étape vous permet de redémarrer OneDrive.
+
+Si le problème persiste, exécutez l'étape "Réinitialiser OneDrive".
+
+Voulez-vous continuer ?</Alerte_MSG>	
+	</Action>	
+
+	<Action>	
+		<Name>Problèmes avec OneDrive après avoir changé de mot de passe Windows</Name> 
+		<Buttons>Ok_Cancel</Buttons>								
+		<Explanation>Vous avez récemment changé de mot de passe et vous rencontrez maintenant des problèmes avec OneDrive, tels que des problèmes de synchronisation.
+
+Cette étape redémarrera le client OneDrive.</Explanation>
+		<Script>SelfX_OneDrive_Reboot.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>Cette première étape vous permet de redémarrer OneDrive.
+
+Si le problème persiste, exécutez l'étape "Réinitialiser OneDrive".
+
+Voulez-vous continuer ?</Alerte_MSG>			
+	</Action>		
+		
+	<Action>	
+		<Name>Vous ne pouvez pas ouvrir les fichiers sur OneDrive</Name>
+		<Buttons>Ok_Cancel</Buttons>								
+		<Explanation>Vous ne pouvez pas ouvrir les fichiers sur OneDrive</Explanation>
+		<Script>SelfX_OneDrive_Reboot.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>Cette première étape vous permet de redémarrer OneDrive.
+
+Si le problème persiste, exécutez l'étape "Réinitialiser OneDrive".
+
+Voulez-vous continuer ?</Alerte_MSG>			
+	</Action>			
+
+	<Action>	
+		<Name>La synchronisation des dossiers fonctionne sur OneDrive mais pas sur Teams</Name>
+		<Buttons>Ok_Cancel</Buttons>								
+		<Explanation>La synchronisation des dossiers fonctionne sur OneDrive mais pas sur Teams</Explanation>
+		<Script>SelfX_OneDrive_Reset.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>OneDrive sera réinitialisé.
+
+La réinitialisation de OneDrive n'entraînera aucune perte de données.
+
+Voulez-vous continuer ?</Alerte_MSG>		
+	</Action>	
+
+	<Action>	
+		<Name>Réinitialisation du client OneDrive</Name>
+		<Buttons>Ok_Cancel</Buttons>								
+		<Explanation>Vous rencontrez des problèmes avec OneDrive, tels que des problèmes de synchronisation.
+
+Cette étape réinitialisera votre client OneDrive.
+
+La réinitialisation du client OneDrive n'entraînera aucune perte de données.</Explanation>
+		<Script>SelfX_OneDrive_Reset.ps1</Script>
+		<Category>OneDrive</Category>	
+		<Alerte_MSG>Votre client OneDrive sera réinitialisé.
+
+Si le problème persiste, veuillez contacter votre support.
+
+La réinitialisation du client OneDrive n'entraînera aucune perte de données.
+
+Voulez-vous continuer ?</Alerte_MSG>		
+	</Action>			
+
+<!-- Partie pour TEAMS --> 
+<Action>	
+	<Name>Résoudre les problèmes de connexion à Teams</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Vous ne pouvez pas vous connecter à Teams</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Votre client Teams sera fermé et ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.		
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>		
+</Action>	
+
+<Action>	
+	<Name>Résoudre les problèmes de synchronisation de l'image de profil Teams</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Votre image de profil n'est pas affichée dans Teams et n'est pas mise à jour</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Votre client Teams sera fermé et ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.		
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>		
+</Action>	
+	
+<Action>	
+	<Name>La synchronisation des dossiers fonctionne sur OneDrive mais pas sur Teams</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>La synchronisation des dossiers fonctionne sur OneDrive mais pas sur Teams</Explanation>
+	<Script>SelfX_OneDrive_Reset.ps1</Script>
+	<Category>Teams</Category>	
+	<Alerte_MSG>Votre client OneDrive sera réinitialisé.
+
+Si le problème persiste après cela, veuillez contacter votre support.		
+
+La réinitialisation du client OneDrive n'entraînera aucune perte de données.
+
+Voulez-vous continuer ?</Alerte_MSG>			
+</Action>		
+	
+<Action>	
+	<Name>L'écran est bloqué sur "Chargement de Microsoft Teams"</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Lorsque vous ouvrez Teams, la fenêtre reste bloquée sur "Chargement de Microsoft Teams"</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>	
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>				
+</Action>			
+	
+<Action>	
+	<Name>Résoudre les problèmes de synchronisation sur Teams</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Vous rencontrez des problèmes de synchronisation sur Teams</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>			
+</Action>			
+
+<Action>	
+	<Name>Mon client Teams ne s'ouvre pas</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Vous essayez d'ouvrir Teams, mais le client ne s'ouvre pas.</Explanation>		
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>				
+</Action>	
+	
+<Action>	
+	<Name>Mon client Teams est gelé lors d'une conversation audio</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Teams est gelé lors d'une conversation audio</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>	
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>					
+</Action>		
+
+<Action>
+	<Name>La caméra de Teams est figée/invisible</Name>
+	<Buttons>Ok_Cancel</Buttons>
+	<Explanation>Votre flux vidéo est figé ou invisible lors d'une réunion ou d'un appel.</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+	Voulez-vous continuer ?</Alerte_MSG>
+</Action>	
+
+<Action>	
+	<Name>Échec de l'envoi des messages sur Teams</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>L'envoi des messages sur Teams ne fonctionne pas. Un message d'erreur "Échec de l'envoi" s'affiche</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>	
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>				
+</Action>		
+
+
+<Action>	
+	<Name>Problèmes d'affichage des onglets sur Teams</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Problèmes d'affichage lors de l'ouverture d'onglets dans Teams</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>	
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>			
+</Action>		
+
+<Action>	
+	<Name>Mon statut Teams ne s'affiche pas correctement</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Votre statut Teams reste déconnecté</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>	
+</Action>		
+
+
+<Action>	
+	<Name>Les fenêtres d'appels Teams ne s'affichent pas</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Les notifications d'appel Teams ne s'affichent plus</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>	
+</Action>	
+
+<Action>	
+	<Name>Je ne peux pas voir le contenu d'un message sur Teams</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Je peux voir la notification et l'aperçu du message, mais pas le contenu</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>	
+</Action>		
+
+<Action>	
+	<Name>Problèmes de connexion après avoir changé de mot de passe</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Impossible de se connecter à Teams après avoir changé de mot de passe</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>		
+</Action>		
+	
+<Action>	
+	<Name>Je ne peux pas ouvrir une réunion Teams</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Impossible d'ouvrir une réunion Teams</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>		
+</Action>		
+
+<Action>	
+	<Name>Problèmes de son lors des réunions Teams</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Des coupures de son se produisent lors des réunions Teams</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>	
+</Action>	
+
+
+<Action>	
+	<Name>Je ne peux pas créer une réunion Teams dans le calendrier Outlook</Name>
+	<Buttons>Ok_Cancel</Buttons>								
+	<Explanation>Impossible de créer une réunion Teams dans le calendrier Outlook</Explanation>
+	<Script>SelfX_Teams_ResetCache.ps1</Script>
+	<Category>Teams</Category>		
+	<Alerte_MSG>Teams sera fermé puis ouvert automatiquement.
+
+Si le problème persiste, veuillez cliquer sur "Déconnecter" dans Teams.	
+	
+Après vous être reconnecté à Teams, si le problème persiste, veuillez contacter votre support.
+
+Voulez-vous continuer ?</Alerte_MSG>	
+</Action>				
+</Actions>
