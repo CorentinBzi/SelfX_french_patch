@@ -14,7 +14,12 @@ Set-Location -Path "$extractPath\SelfX-main\SelfX Standard"
 # Exécutez la commande d'installation appropriée ici
 .\Install_tool.ps1
 
+# Demander où est le dossier "SelfX FR"
+$sourceXmlPath = Read-Host -Prompt 'Enter the path to the "SelfX FR" folder'
+
+# Ajouter les fichiers "\*.xml"
+$sourceXmlPath = Join-Path -Path $sourceXmlPath -ChildPath "*.xml"
+
 # Remplacer les fichiers XML
-$sourceXmlPath = "$env:USERPROFILE\Selfx FR\*.xml"
 $destinationXmlPath = "$env:LOCALAPPDATA\SelfX\"
 Copy-Item -Path $sourceXmlPath -Destination $destinationXmlPath -Force
