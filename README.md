@@ -1,5 +1,5 @@
 # Patch Français pour SelfX
-Ce dépôt contient un patch pour l'outil SelfX qui traduit tout le contenu en français. L'outil SelfX original peut être trouvé à ce lien.
+Ce dépôt contient un patch pour l'outil SelfX qui traduit tout le contenu en français. L'outil SelfX original: https://github.com/damienvanrobaeys/SelfX
 
 ## Solution
 La solution consiste à remplacer les fichiers XML dans l'installation de SelfX par des versions françaises. Ces fichiers XML français se trouvent dans le dossier "SelfX FR" de ce dépôt.
